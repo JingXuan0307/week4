@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: block; }
+
+h2 {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: bold;
+  color: #650300; }
+
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #650300;
+  text-align: center; }
+
+.container {
+  margin: 0 auto; }
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto; }
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #AA0601;
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+  .header h2 {
+    text-align: right;
+    font-size: 64px; }
+  .header .article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .header img {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 50px; }
+  .header .text {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    top: 50%;
+    right: 15%; }
+    .header .text p {
+      font-size: 36px;
+      line-height: 54px;
+      color: #650300; }
+    .header .text h2 {
+      font-size: 64px;
+      line-height: 96px;
+      color: #650300; }
+    .header .text .btn-buy {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 30px;
+      color: #fff;
+      padding: 6px 12px;
+      background-color: #AA0601; }
+  .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header ul li {
+      width: 100px;
+      margin-right: 32px; }
+    .header ul a {
+      color: #fff;
+      text-decoration: none; }
+    .header ul a:hover {
+      color: white;
+      font-weight: 700;
+      -webkit-text-decoration: underline #eba87c 5px;
+              text-decoration: underline #eba87c 5px; }
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #AA0601;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .footer .main {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 48px auto 32px auto;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #fff; }
+  .footer .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer .left a {
+      text-decoration: none;
+      font-size: 36px;
+      line-height: 54px;
+      color: #fff;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .footer .left a:hover {
+      -webkit-text-decoration: underline 2px;
+              text-decoration: underline 2px;
+      color: #c3c3c3; }
+    .footer .left ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 35px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 100%; }
+      .footer .left ul li {
+        color: #fff;
+        width: 80px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      .footer .left ul a {
+        font-size: 16px;
+        line-height: 24px; }
+      .footer .left ul a:hover {
+        font-weight: 900; }
+  .footer .right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer .right li {
+    margin: 0 16px; }
+    @media (max-width: 768px) {
+      .footer .right li {
+        margin: 0 5px; } }
+  .footer .right img {
+    display: block;
+    width: 48px;
+    height: 48px; }
+    @media (max-width: 768px) {
+      .footer .right img {
+        width: 40px;
+        height: 40px; } }
+  .footer .bottom {
+    width: 70%;
+    margin: 32px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer .bottom section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 25%; }
+    .footer .bottom p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 24px; }
+
+/*header*/
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+header nav li {
+  width: 33.33%; }
+  header nav li a {
+    display: block;
+    padding: 24px;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #000;
+    border: 1px solid #DCDCDC; }
+
+header .p2_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  header .p2_banner img {
+    width: 50%; }
+
+/*產品*/
+.container {
+  margin: 90px auto 0 auto;
+  width: 70%; }
+  .container h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 32px; }
+    .container h2 span {
+      font-size: 32px;
+      line-height: 48px; }
+  .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .container li {
+    margin: 0 12px 80px 12px; }
+    .container li img {
+      width: 306px; }
+    .container li .txt {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .container li .txt p {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold; }
+      .container li .txt .price {
+        color: #AA0601; }
+    .container li .color {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .container li .color div {
+        width: 24px;
+        height: 24px;
+        margin: 0 4px; }
+      .container li .color .deep_brown {
+        background-color: #5F3E2D; }
+      .container li .color .light_brown {
+        background-color: #B75929; }
+
+.page {
+  margin-bottom: 80px; }
+  .page ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .page li {
+    text-decoration: none;
+    border: 1px solid #555555;
+    margin: 0; }
+    .page li a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 27px;
+      color: #555555; }
+      .page li a:hover {
+        background: #000;
+        font-weight: bold;
+        color: #FFFFFF; }
+  .page .pre, .page .next {
+    background-color: #F2F2F2; }
+    .page .pre:hover, .page .next:hover {
+      background-color: #555555; }
+
+/*# sourceMappingURL=all-p2.css.map */
